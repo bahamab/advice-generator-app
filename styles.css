@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: hsl(193, 38%, 86%);
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+}
+
+.main-container {
+  margin: auto;
+  background-color: hsl(217, 19%, 24%);
+  height: 22rem;
+  width: 38rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 38rem;
+  grid-template-rows: 5rem 9rem 5rem 3rem;
+}
+
+.h1-advice-id {
+  grid-row: 1;
+  color: hsl(150, 100%, 66%);
+  margin: auto;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.45rem;
+}
+
+.quote {
+  grid-row: 2;
+  margin: auto;
+  margin-top: 0.25rem;
+  font-size: 1.75rem;
+  text-align: center;
+  width: 29rem;
+}
+#quote-number {
+  letter-spacing: 0.25rem;
+}
+.pattern-divider-desktop {
+  margin: auto;
+}
+.pattern-divider-mobile {
+  margin: auto;
+  display: none;
+}
+
+.dice-button {
+  margin: auto;
+  margin-bottom: -2.25rem;
+  padding: 1.5rem;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 100rem;
+  display: grid;
+  transition: all 0.5s ease;
+}
+.dice-button:hover {
+  box-shadow: 0 0 3rem 0 hsl(150, 100%, 66%);
+}
+
+.dice-image {
+  margin: auto;
+  height: 1.5rem;
+}
+
+.credit {
+  margin: auto;
+  position: relative;
+  top: 6rem;
+}
+.credit a {
+  color: steelblue;
+}
+
+@media all and (max-width: 675px) {
+  html {
+    font-size: 13px;
+  }
+  .pattern-divider-desktop {
+    display: none;
+  }
+  .pattern-divider-mobile {
+    display: block;
+  }
+}
+@media all and (max-width: 500px) {
+  html {
+    font-size: 14.5px;
+  }
+
+  .main-container {
+    margin: auto;
+    background-color: hsl(217, 19%, 24%);
+    height: 27rem;
+    width: 24rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 24rem;
+    grid-template-rows: 7rem 12rem 5rem 3rem;
+  }
+  .quote {
+    width: 22rem;
+  }
+}
