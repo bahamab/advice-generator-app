@@ -73,15 +73,6 @@ body {
   height: 1.5rem;
 }
 
-.credit {
-  margin: auto;
-  position: relative;
-  top: 6rem;
-}
-.credit a {
-  color: steelblue;
-}
-
 @media all and (max-width: 675px) {
   html {
     font-size: 13px;
@@ -110,5 +101,16 @@ body {
   }
   .quote {
     width: 22rem;
+  }
+}
+
+@media all and (max-width: 380px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 300px) {
+  html {
+    font-size: 12px;
   }
 }
